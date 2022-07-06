@@ -3,6 +3,7 @@
 gem install github_changelog_generator 
 gem which github_changelog_generator
 gem environment
+ls -a 
 cat ~/.bash_profile
 github_changelog_generator -u marutanseijinwork -p hello-world-docker-action
 echo $PATH
