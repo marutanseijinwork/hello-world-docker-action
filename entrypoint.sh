@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-gem install github_changelog_generator
+sudo gem install github_changelog_generator
 github_changelog_generator -u marutanseijinwork -p hello-world-docker-action
 echo "こんばんは $1"
 time=$(date)
