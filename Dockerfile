@@ -1,9 +1,9 @@
-FROM ruby:3.0
+FROM githubchangeloggenerator/github-changelog-generator:1.16.2
 
 COPY entrypoint.sh /entrypoint.sh
 
-RUN sudo gem install github_changelog_generator
+# RUN gem install github_changelog_generator
 
-ENTRYPOINT ["github_changelog_generator"] 
-CMD ["--help"]
-# ENTRYPOINT ["/entrypoint.sh"]
+# ENTRYPOINT ["github_changelog_generator"] 
+# CMD ["--help"]
+ENTRYPOINT ["/entrypoint.sh"]
