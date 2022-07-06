@@ -1,6 +1,5 @@
 #!/bin/sh -l
 
-gem install github_changelog_generator 
 gem which github_changelog_generator
 gem environment
 ls -a .
